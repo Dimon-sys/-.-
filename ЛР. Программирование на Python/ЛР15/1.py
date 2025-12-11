@@ -35,8 +35,16 @@ while True:
     members = input()
     member_1 = members.split(' ')[0] 
     member_2 = members.split(' ')[1]
-    chain_1 = potomok_his_ancestors[member_1]
-    chain_2 = potomok_his_ancestors[member_2]
+    try:
+        chain_1 = potomok_his_ancestors[member_1]
+    except KeyError:
+        print(f'Человека {member_1} в родословной нет')
+        continue
+    try:
+        chain_2 = potomok_his_ancestors[member_2]
+    except KeyError:
+        print(f'Человека {member_2} в родословной нет')
+        continue
     lca = ''
     flag = False
     for i in chain_2:
