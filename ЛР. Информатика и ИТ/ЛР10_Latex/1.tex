@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{indentfirst}
+
+\begin{document}
+
+\section*{Вариант10}
+\section*{\centerline{Лекция} \\ \centerline{\textit{Аппаратно-независимый уровень управления виртуальной}} \\ \centerline{\textit{памятью}}}
+
+Большинство ОС используют сегментно-страничную виртуальную
+память. Для обеспечения нужной производительности менеджер памяти ОС
+старается поддерживать в оперативной памяти актуальную информацию,
+пытаясь угадать, к каким логическим адресам последует обращение в
+недалеком будущем.
+
+\begin{enumerate}
+    \item[\textbf{\textsl{1.}}] \textbf{\textit{Исключительные ситуации при работе с памятью}}
+    \item[\textbf{\textsl{2.}}] \textbf{\textit{Стратегии управления страничной памятью}}
+    \item[\textbf{\textsl{3.}}] \textbf{\textit{Алгоритмы замещения страниц}}
+    \begin{enumerate}
+        \item[\textbf{3.1.}] \textbf{Алгоритм FIFO. Выталкивание первой пришедшей страницы}
+        \begin{enumerate}
+            \item[\textbf{3.1.1.}] \textbf{Аномалия Билэди (Belady)}
+        \end{enumerate}
+        \item[\textbf{3.2.}] \textbf{Оптимальный алгоритм (ОРТ)}
+        \item[\textbf{3.3.}] \textbf{Выталкивание дольше всего не использовавшейся страницы. Алгоритм LRU}
+        \begin{enumerate}
+            \item[\textsl{3.3.1.}] \textit{Выталкивание редко используемой страницы. Алгоритм NFU}
+            \item[\textsl{3.3.2.}] \textit{Другие алгоритмы}
+        \end{enumerate}
+    \end{enumerate}
+    \item[\textbf{\textsl{4.}}] \textbf{\textit{Управление количеством страниц, выделенных процессу. Модель рабочего множества}}
+    \begin{enumerate}
+        \item[\textbf{4.1}] \textbf{Трешинг (Thrashing)}
+        \item[\textbf{4.2}] \textbf{Модель рабочего множества}
+    \end{enumerate}
+    \item[\textbf{\textsl{5.}}] \textbf{Страничные демоны}
+    \item[\textbf{\textsl{6.}}] \textbf{Программная поддержка сегментной модели памяти процесса \newline{Отдельные аспекты функционирования менеджера памяти}}
+\end{enumerate}
+
+
+\end{document}
