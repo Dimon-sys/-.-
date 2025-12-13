@@ -46,3 +46,4 @@ except ValueError:
                 matrix_r[row][col] = 0
     print(*[r[::-1] for r in matrix_r], sep='\n')
 
+
