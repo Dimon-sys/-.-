@@ -52,10 +52,11 @@ class Triangle:
         return False
     
     def triangle_type(self):
-        d = ['Треугольник ']
+        d = 'Треугольник '
         if self.is_equilateral():
-            d += ['равносторонний.']
+            d += 'равносторонний.'
         elif self.is_isoscele():
-            d += [f'равнобедренный, значения углов: {self.angles[0]}, {self.angles[1]}, {self.angles[2]}.']
+            d += f'равнобедренный, значения углов: {self.angles[0]}, {self.angles[1]}, {self.angles[2]}.'
         else:
-            d += [f'имеет разные стороны, значения углов: {self.angles[0]}, {self.angles[1]}, {self.angles[2]}.']
+            d += f'имеет разные стороны, значения углов: {self.angles[0]}, {self.angles[1]}, {self.angles[2]}.'
+        return d
