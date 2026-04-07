@@ -10,8 +10,8 @@ n = sheet.max_row
 m = sheet.max_column
 count = 0
 c = 0
-yellow_fill = PatternFill(start_color='FFFF00', end_color='FFFF00', fill_type='solid')
-green_fill = PatternFill(start_color='008000', end_color='008000', fill_type='solid')
+yellow_fill = PatternFill(start_color='FFFF00', end_color='FFFF00', fill_type='solid') #заливка всех полей
+green_fill = PatternFill(start_color='008000', end_color='008000', fill_type='solid') #заливка полей, удовлетворяющих условию
 
 
 for row in sheet.iter_rows(min_row=1,
