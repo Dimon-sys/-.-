@@ -1,10 +1,8 @@
 from PIL import Image, ImageDraw
 
-    # Создаем серый фон
 img = Image.new("RGB", (600, 600), "#E0E0E0")
 draw = ImageDraw.Draw(img)
 
-    # Цвета
 outline_col = "#505050" # Темно-серый контур
 white = "white"
 
