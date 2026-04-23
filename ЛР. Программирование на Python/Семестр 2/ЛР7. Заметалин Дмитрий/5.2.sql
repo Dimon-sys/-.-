@@ -6,4 +6,3 @@ SELECT
 FROM sales sl
 INNER JOIN merch m ON sl.merch_id = m.id
 GROUP BY m.id
-ORDER BY Общая_выручка DESC;
