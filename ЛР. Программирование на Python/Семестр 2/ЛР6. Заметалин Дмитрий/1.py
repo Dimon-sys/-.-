@@ -7,6 +7,7 @@ draw = ImageDraw.Draw(im)
 
 draw.rectangle(((0, height*0.55), (width, height)), fill='#E0E0E0', outline=(0,0,0,0))
 
+#Рисуем солнце
 size = (500, 500)
     
 glow_layer = Image.new("RGBA", size, (0, 0, 0, 0))
