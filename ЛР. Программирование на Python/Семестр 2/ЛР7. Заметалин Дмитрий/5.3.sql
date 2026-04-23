@@ -7,5 +7,4 @@ FROM sales sl
 INNER JOIN sellers s ON sl.seller_id = s.id
 INNER JOIN departments d ON s.department_id = d.id
 GROUP BY s.id
-ORDER BY Всего_единиц_товара DESC
 LIMIT 3;
