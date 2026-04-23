@@ -7,4 +7,3 @@ SELECT
 FROM sellers s
 INNER JOIN departments d ON s.department_id = d.id
 WHERE s.age > 30
-ORDER BY s.age DESC;
