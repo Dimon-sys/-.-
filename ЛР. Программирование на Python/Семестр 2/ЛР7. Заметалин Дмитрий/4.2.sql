@@ -8,7 +8,6 @@ SELECT
 FROM sales sl
 INNER JOIN merch m ON sl.merch_id = m.id
 INNER JOIN sellers s ON sl.seller_id = s.id
-WHERE s.department_id = 1  -- ID отдела
-    AND sl.date = '2025-03-01'  -- Дата
+WHERE s.department_id = 1
+    AND sl.date = '2025-03-01'
 GROUP BY m.id
-ORDER BY Общая_выручка DESC;
