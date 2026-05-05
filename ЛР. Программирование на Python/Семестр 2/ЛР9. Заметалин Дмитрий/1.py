@@ -1,5 +1,6 @@
 from tkinter import *
 
+#Вариант 1-10
 root = Tk()
 root.title('Города')
 root.geometry('500x500')
