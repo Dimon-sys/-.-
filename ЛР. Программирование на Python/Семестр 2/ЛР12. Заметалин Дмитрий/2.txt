@@ -1,0 +1,3 @@
+Наш сайт: http://example.ru.
+Скачайте файлы с ftp://files.example.com.
+По вопросам пишите на admin@example.org.
